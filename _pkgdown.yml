@@ -1,0 +1,17 @@
+url: https://noahweidig.github.io/fastrap/
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#8a6d3b"
+    navbar-bg: "#4a3b22"
+    base_font: {google: "Inter"}
+    code_font: {google: "JetBrains Mono"}
+navbar:
+  bg: primary
+  structure:
+    left: [reference]
+    right: [search, github]
+reference:
+  - title: Extract
+    contents:
+      - extract_rap

@@ -1,0 +1,21 @@
+Package: fastrap
+Title: Fast Rangeland Analysis Platform Cover Extraction for Polygons
+Version: 0.1.0
+Authors@R: person("Noah", "Weidig", role = c("aut", "cre"),
+    email = "weidignc@gmail.com")
+Description: One function, extract_rap(), that returns per-feature mean
+    vegetation cover from the Rangeland Analysis Platform (RAP) annual
+    vegetation cover v3 (CONUS, 1986-2025, about 30 m). Only the windows of
+    the cloud-optimized GeoTIFF that each feature touches are read over HTTP,
+    in parallel, and cached on disk. Extraction uses exact, area-weighted
+    coverage fractions via exactextractr and runs in spatially sorted chunks
+    so memory stays flat for large layers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+URL: https://noahweidig.github.io/fastrap/, https://github.com/noahweidig/fastrap
+BugReports: https://github.com/noahweidig/fastrap/issues
+Imports: exactextractr (>= 0.9.0), parallel, sf, stats, terra, tools
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
